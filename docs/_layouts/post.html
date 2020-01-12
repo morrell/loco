@@ -5,8 +5,7 @@ layout: default
 {% if page.subtitle %}
   <p><em>{{ page.subtitle }}</em></p>
 {% endif %}
-<p class="view">by {{ page.author | default: site.author }}</p>
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
+<p class="view">by {{ page.author | default: site.author }} - <small>{{ page.date | date: "%-d %B %Y" }}</small></p>
 
 {{ content }}
 
