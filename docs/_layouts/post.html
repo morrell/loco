@@ -8,9 +8,10 @@ layout: default
   <p><em>{{ page.subtitle }}</em></p>
 {% endif %}
 
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
+
 
 <p class="view">by {{ page.author | default: site.author }}</p>
+<small>{{ page.date | date: "%-d %B %Y" }}</small>
 
 {{ content }}
 
